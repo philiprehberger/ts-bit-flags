@@ -1,9 +1,16 @@
 {
   "name": "@philiprehberger/bit-flags",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Type-safe bitwise flag operations for permissions, features, and options",
-  "keywords": ["bitwise", "flags", "bitmask", "permissions", "enum", "typed"],
-  "author": "philiprehberger",
+  "keywords": [
+    "bitwise",
+    "flags",
+    "bitmask",
+    "permissions",
+    "enum",
+    "typed"
+  ],
+  "author": "Philip Rehberger",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -25,19 +32,26 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "engines": {
-    "node": ">=18"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "test": "node --test"
+    "test": "node --test",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
+  },
+  "homepage": "https://github.com/philiprehberger/ts-bit-flags#readme",
+  "bugs": {
+    "url": "https://github.com/philiprehberger/ts-bit-flags/issues"
   }
 }
