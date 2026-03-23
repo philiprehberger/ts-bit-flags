@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/bit-flags",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Type-safe bitwise flag operations for permissions, features, and options",
   "keywords": ["bitwise", "flags", "bitmask", "permissions", "enum", "typed"],
   "author": "philiprehberger",
